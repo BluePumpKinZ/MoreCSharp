@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>MoreCSharp.Tests</RootNamespace>
+    <StartupObject />
+    <AssemblyName>MoreCSharpTests</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Collections.Generic\MoreCSharp.Collections.Generic.csproj" />
+  </ItemGroup>
+
+</Project>
