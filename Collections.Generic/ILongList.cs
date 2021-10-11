@@ -1,8 +1,11 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace MoreCSharp.Collections.Generic {
 
 	public interface ILongList<T> : ILongCollection<T> {
+
+		public void ForEach (Action<T> action);
 
 		public long IndexOf (T item);
 
