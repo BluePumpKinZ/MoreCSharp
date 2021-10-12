@@ -20,7 +20,7 @@ namespace MoreCSharp.Tests {
 				list.Add (value);
 			}
 
-			Program.PrintTestLine ("Adding", CheckLists (longList, list));
+			Program.PrintTestLine ("Adding", Program.CheckLists (longList, list));
 
 			for (int i = 0; i < testSize; i++) {
 				int value = random.Next (100);
@@ -28,14 +28,14 @@ namespace MoreCSharp.Tests {
 				list.Insert (testSize - i - 1, value);
 			}
 
-			Program.PrintTestLine ("Inserting", CheckLists (longList, list));
+			Program.PrintTestLine ("Inserting", Program.CheckLists (longList, list));
 
 			for (int i = 0; i < testSize; i++) {
 				longList.RemoveAt (i);
 				list.RemoveAt (i);
 			}
 
-			Program.PrintTestLine ("Removing", CheckLists (longList, list));
+			Program.PrintTestLine ("Removing", Program.CheckLists (longList, list));
 
 			List<int> indeces1 = new List<int> (), indeces2 = new List<int> ();
 			for (int i = 0; i < testSize; i++) {
@@ -44,19 +44,8 @@ namespace MoreCSharp.Tests {
 				indeces2.Add (list.IndexOf (value));
 			}
 
-			Program.PrintTestLine ("Indexing", CheckLists (indeces1, indeces2));
+			Program.PrintTestLine ("Indexing", Program.CheckLists (indeces1, indeces2));
 
-		}
-
-		private bool CheckLists<T> (IEnumerable<T> a, IEnumerable<T> b) {
-			if (a.LongCount () != b.LongCount ())
-				return false;
-			foreach (Tuple<T, T> tuple in a.Zip (b, (first, second) => new Tuple<T, T> (first, second))) {
-				if (!Equals (tuple.Item1, tuple.Item2))
-					return false;
-			}
-
-			return true;
 		}
 
 	}
