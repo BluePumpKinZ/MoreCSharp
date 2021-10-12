@@ -5,7 +5,7 @@ using System.Collections.Generic;
 namespace MoreCSharp.Collections.Generic {
 	public class LongList<T> : ILongList<T> {
 
-		private const int BitsPerList = 6;
+		private const int BitsPerList = 30;
 		private const int MaxItemsPerList = 1 << BitsPerList;
 		private const long LowerBitMask = MaxItemsPerList - 1;
 		private const long HigherBitMask = ~LowerBitMask & ~(1L << 63);
