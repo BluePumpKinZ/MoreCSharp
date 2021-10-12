@@ -4,47 +4,47 @@
 
 		// Clamp
 		public static byte Clamp (byte v, byte min, byte max) {
-			return (v < min) ? ((v > max) ? max : v) : min;
+			return v < min ? min : v > max ? max : v;
 		}
 
 		public static sbyte Clamp (sbyte v, sbyte min, sbyte max) {
-			return (v < min) ? ((v > max) ? max : v) : min;
+			return v < min ? min : v > max ? max : v;
 		}
 
 		public static short Clamp (short v, short min, short max) {
-			return (v < min) ? ((v > max) ? max : v) : min;
+			return v < min ? min : v > max ? max : v;
 		}
 
 		public static ushort Clamp (ushort v, ushort min, ushort max) {
-			return (v < min) ? ((v > max) ? max : v) : min;
+			return v < min ? min : v > max ? max : v;
 		}
 
 		public static int Clamp (int v, int min, int max) {
-			return (v < min) ? ((v > max) ? max : v) : min;
+			return v < min ? min : v > max ? max : v;
 		}
 
 		public static uint Clamp (uint v, uint min, uint max) {
-			return (v < min) ? ((v > max) ? max : v) : min;
+			return v < min ? min : v > max ? max : v;
 		}
 
 		public static long Clamp (long v, long min, long max) {
-			return (v < min) ? ((v > max) ? max : v) : min;
+			return v < min ? min : v > max ? max : v;
 		}
 
 		public static ulong Clamp (ulong v, ulong min, ulong max) {
-			return (v < min) ? ((v > max) ? max : v) : min;
+			return v < min ? min : v > max ? max : v;
 		}
 
 		public static float Clamp (float v, float min, float max) {
-			return (v < min) ? ((v > max) ? max : v) : min;
+			return v < min ? min : v > max ? max : v;
 		}
 
 		public static double Clamp (double v, double min, double max) {
-			return (v < min) ? ((v > max) ? max : v) : min;
+			return v < min ? min : v > max ? max : v;
 		}
 
 		public static decimal Clamp (decimal v, decimal min, decimal max) {
-			return (v < min) ? ((v > max) ? max : v) : min;
+			return v < min ? min : v > max ? max : v;
 		}
 
 		// Clamp01
