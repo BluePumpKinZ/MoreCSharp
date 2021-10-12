@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Collections.Generic\MoreCSharp.Collections.Generic.csproj" />
+    <ProjectReference Include="..\MoreCSharp.Math\MoreCSharp.Math.csproj" />
   </ItemGroup>
 
 </Project>

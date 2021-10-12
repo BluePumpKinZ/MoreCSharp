@@ -25,6 +25,7 @@ namespace MoreCSharp.Tests {
 		public static void Main () {
 
 			new LongListTest ().Test ();
+			new MoreMathTest ().Test ();
 
 		}
 	}
