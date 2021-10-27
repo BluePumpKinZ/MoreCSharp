@@ -23,10 +23,9 @@ namespace MoreCSharp.Tests {
 		}
 
 		public static void Main () {
-
-			new LongListTest ().Test ();
 			new MoreMathTest ().Test ();
-
+			new LongListTest ().Test ();
+			new StringExtensions ().Test ();
 		}
 	}
 }

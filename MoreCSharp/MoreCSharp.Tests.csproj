@@ -11,6 +11,7 @@
   <ItemGroup>
     <ProjectReference Include="..\MoreCSharp.Math\MoreCSharp.Math.csproj" />
     <ProjectReference Include="..\MoreCSharp.System.Collections.Generic\MoreCSharp.System.Collections.Generic.csproj" />
+    <ProjectReference Include="..\MoreCSharp.System\MoreCSharp.System.csproj" />
   </ItemGroup>
 
 </Project>
