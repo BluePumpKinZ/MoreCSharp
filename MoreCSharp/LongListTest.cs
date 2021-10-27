@@ -13,7 +13,7 @@ namespace MoreCSharp.Tests {
 			Random random = new Random ();
 			LongList<int> longList = new LongList<int> ();
 			List<int> list = new List<int> ();
-			const int testSize = 10000;
+			const int testSize = 1000;
 			for (int i = 0; i < testSize; i++) {
 				int value = random.Next (100);
 				longList.Add (value);
