@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <AssemblyName>MoreCSharp.System.Collections.Generic</AssemblyName>
+	<AssemblyName>MoreCSharp.System.Collections.Generic</AssemblyName>
 	<Rootnamespace>MoreCSharp.System.Collections.Generic</Rootnamespace>
   </PropertyGroup>
 

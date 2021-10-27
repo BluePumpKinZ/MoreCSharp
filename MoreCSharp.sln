@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MoreCSharp.System.Collectio
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MoreCSharp.Math", "MoreCSharp.Math\MoreCSharp.Math.csproj", "{79BFAF60-DCD4-48B5-A8B5-6FE57F8B9193}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoreCSharp.System.Collections", "MoreCSharp.System.Collections\MoreCSharp.System.Collections.csproj", "{285DA576-8486-4900-ACE0-E29D5025D435}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{79BFAF60-DCD4-48B5-A8B5-6FE57F8B9193}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79BFAF60-DCD4-48B5-A8B5-6FE57F8B9193}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79BFAF60-DCD4-48B5-A8B5-6FE57F8B9193}.Release|Any CPU.Build.0 = Release|Any CPU
+		{285DA576-8486-4900-ACE0-E29D5025D435}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{285DA576-8486-4900-ACE0-E29D5025D435}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{285DA576-8486-4900-ACE0-E29D5025D435}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{285DA576-8486-4900-ACE0-E29D5025D435}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
