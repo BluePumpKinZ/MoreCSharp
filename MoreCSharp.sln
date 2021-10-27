@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MoreCSharp.Tests", "MoreCSharp\MoreCSharp.Tests.csproj", "{12D6A567-18C8-4A7C-9AE5-9822C268B884}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MoreCSharp.Collections.Generic", "Collections.Generic\MoreCSharp.Collections.Generic.csproj", "{F19B1A24-A54F-42D3-84BE-625B5D534911}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MoreCSharp.System.Collections.Generic", "MoreCSharp.System.Collections.Generic\MoreCSharp.System.Collections.Generic.csproj", "{F19B1A24-A54F-42D3-84BE-625B5D534911}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoreCSharp.Math", "MoreCSharp.Math\MoreCSharp.Math.csproj", "{79BFAF60-DCD4-48B5-A8B5-6FE57F8B9193}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MoreCSharp.Math", "MoreCSharp.Math\MoreCSharp.Math.csproj", "{79BFAF60-DCD4-48B5-A8B5-6FE57F8B9193}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
