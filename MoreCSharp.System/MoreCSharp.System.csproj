@@ -1,9 +1,18 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
+  
   <PropertyGroup>
+    
     <TargetFramework>net5.0</TargetFramework>
-    <RootNamespace>MoreCSharp.System</RootNamespace>
     <AssemblyName>MoreCSharp.System</AssemblyName>
+    <Rootnamespace>MoreCSharp.System</Rootnamespace>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <ApplicationIcon>./../images/logoIco.ico</ApplicationIcon>
+    <Authors>Jonas Leijzen</Authors>
+    <RepositoryUrl>https://github.com/BluePumpKinZ/MoreCSharp/tree/master/MoreCSharp.System</RepositoryUrl>
+    <PackageLicenseExpression>AGPL-3.0-only</PackageLicenseExpression>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <PackageRequiredLicenseAcceptance>true</PackageRequiredLicenseAcceptance>
+    
   </PropertyGroup>
 
 </Project>

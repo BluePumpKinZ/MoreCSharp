@@ -1,11 +1,19 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
+  
   <PropertyGroup>
+    
     <OutputType>Exe</OutputType>
     <TargetFramework>net5.0</TargetFramework>
-    <RootNamespace>MoreCSharp.Tests</RootNamespace>
-    <StartupObject />
-    <AssemblyName>MoreCSharpTests</AssemblyName>
+    <AssemblyName>MoreCSharp.Tests</AssemblyName>
+    <Rootnamespace>MoreCSharp.Tests</Rootnamespace>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <ApplicationIcon>./../images/logoIco.ico</ApplicationIcon>
+    <Authors>Jonas Leijzen</Authors>
+    <RepositoryUrl>https://github.com/BluePumpKinZ/MoreCSharp/tree/master/MoreCSharp.Tests</RepositoryUrl>
+    <PackageLicenseExpression>AGPL-3.0-only</PackageLicenseExpression>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <PackageRequiredLicenseAcceptance>true</PackageRequiredLicenseAcceptance>
+    
   </PropertyGroup>
 
   <ItemGroup>

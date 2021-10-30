@@ -1,0 +1,64 @@
+#!/bin/bash
+
+regextestproj="^.*.Tests.csproj"
+regexitemgroup="([\n\r\t ]*<ProjectReference Include=\".*\" \/>)"
+
+tmp="/tmp/csproj"
+
+for csproj in $(find -name '*.csproj')
+do
+	if [[ $csproj =~ $regextestproj ]] ; then
+		isTestProj=1
+	else 
+		isTestProj=0
+	fi
+	
+	file=$(cat $csproj)
+	
+	if [[ $file =~ $regexitemgroup ]] ; then
+		itemgroup=$(echo -e "  <ItemGroup>\n${BASH_REMATCH[0]}\n  </ItemGroup>")
+	else
+		itemgroup=""
+	fi
+	
+	namespace=${csproj##*/}
+	namespace=${namespace%.*}
+	
+	rm $tmp
+	touch $tmp
+	
+	echo "<Project Sdk=\"Microsoft.NET.Sdk\">" >> $tmp
+	echo "  " >> $tmp
+	echo "  <PropertyGroup>" >> $tmp
+	echo "    " >> $tmp
+	if [ $isTestProj -eq 1 ] ; then
+		echo "    <OutputType>Exe</OutputType>" >> $tmp
+	fi
+	echo "    <TargetFramework>net5.0</TargetFramework>" >> $tmp
+	echo "    <AssemblyName>${namespace}</AssemblyName>" >> $tmp
+	echo "    <Rootnamespace>${namespace}</Rootnamespace>" >> $tmp
+	if [ $isTestProj -eq 1 ] ; then
+		echo "    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>" >> $tmp
+	else
+		echo "    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>" >> $tmp
+	fi
+	echo "    <ApplicationIcon>./../images/logoIco.ico</ApplicationIcon>" >> $tmp
+	echo "    <Authors>Jonas Leijzen</Authors>" >> $tmp
+	echo "    <RepositoryUrl>https://github.com/BluePumpKinZ/MoreCSharp/tree/master/${namespace}</RepositoryUrl>" >> $tmp
+	echo "    <PackageLicenseExpression>AGPL-3.0-only</PackageLicenseExpression>" >> $tmp
+	echo "    <NeutralLanguage>en-US</NeutralLanguage>" >> $tmp
+	echo "    <PackageRequiredLicenseAcceptance>true</PackageRequiredLicenseAcceptance>" >> $tmp
+	echo "    " >> $tmp
+	echo "  </PropertyGroup>" >> $tmp
+	echo "" >> $tmp
+	if [ "${#itemgroup}" -ne 0 ] ; then
+		echo "$itemgroup" >> $tmp
+		echo "" >> $tmp
+	fi
+	echo "</Project>" >> $tmp
+	echo "Did project $namespace"
+	cp $tmp $csproj
+	
+done
+
+rm $tmp

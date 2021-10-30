@@ -1,7 +1,18 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
+  
   <PropertyGroup>
+    
     <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>MoreCSharp.Math</AssemblyName>
+    <Rootnamespace>MoreCSharp.Math</Rootnamespace>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <ApplicationIcon>./../images/logoIco.ico</ApplicationIcon>
+    <Authors>Jonas Leijzen</Authors>
+    <RepositoryUrl>https://github.com/BluePumpKinZ/MoreCSharp/tree/master/MoreCSharp.Math</RepositoryUrl>
+    <PackageLicenseExpression>AGPL-3.0-only</PackageLicenseExpression>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <PackageRequiredLicenseAcceptance>true</PackageRequiredLicenseAcceptance>
+    
   </PropertyGroup>
 
 </Project>
