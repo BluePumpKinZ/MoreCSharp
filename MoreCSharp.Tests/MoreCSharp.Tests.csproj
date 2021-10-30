@@ -15,11 +15,11 @@
     <PackageRequiredLicenseAcceptance>true</PackageRequiredLicenseAcceptance>
     
   </PropertyGroup>
-
+  
   <ItemGroup>
+    <ProjectReference Include="..\MoreCSharp.Collections.Generic\MoreCSharp.Collections.Generic.csproj" />
+    <ProjectReference Include="..\MoreCSharp.Extensions.System\MoreCSharp.Extensions.System.csproj" />
     <ProjectReference Include="..\MoreCSharp.Math\MoreCSharp.Math.csproj" />
-    <ProjectReference Include="..\MoreCSharp.System.Collections.Generic\MoreCSharp.System.Collections.Generic.csproj" />
-    <ProjectReference Include="..\MoreCSharp.System\MoreCSharp.System.csproj" />
   </ItemGroup>
 
 </Project>

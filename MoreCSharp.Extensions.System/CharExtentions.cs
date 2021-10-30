@@ -1,4 +1,4 @@
-﻿namespace MoreCSharp.System {
+﻿namespace MoreCSharp.Extensions.System {
 
 	public static class CharExtentions {
 

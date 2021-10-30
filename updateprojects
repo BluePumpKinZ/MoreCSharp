@@ -24,7 +24,7 @@ do
 	namespace=${csproj##*/}
 	namespace=${namespace%.*}
 	
-	rm $tmp
+	rm $tmp 2> /dev/null
 	touch $tmp
 	
 	echo "<Project Sdk=\"Microsoft.NET.Sdk\">" >> $tmp

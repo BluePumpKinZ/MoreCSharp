@@ -1,4 +1,4 @@
-﻿using MoreCSharp.System;
+﻿using MoreCSharp.Extensions.System;
 using System.Collections.Generic;
 
 namespace MoreCSharp.Tests {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MoreCSharp.System.Collections.Generic {
+namespace MoreCSharp.Collections.Generic {
 
 	public interface ILongList<T> : ILongCollection<T> {
 

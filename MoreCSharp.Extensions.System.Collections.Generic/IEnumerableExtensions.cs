@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace MoreCSharp.System.Collections.Generic.Extensions {
+namespace MoreCSharp.Extensions.System.Collections.Generic {
 
 	public static class IEnumerableExtensions {
 

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System;
-using MoreCSharp.System.Collections.Generic;
+using MoreCSharp.Collections.Generic;
 
 namespace MoreCSharp.Tests {
 

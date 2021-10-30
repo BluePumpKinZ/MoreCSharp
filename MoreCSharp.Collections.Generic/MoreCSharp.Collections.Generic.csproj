@@ -3,12 +3,12 @@
   <PropertyGroup>
     
     <TargetFramework>net5.0</TargetFramework>
-    <AssemblyName>MoreCSharp.System.Collections</AssemblyName>
-    <Rootnamespace>MoreCSharp.System.Collections</Rootnamespace>
+    <AssemblyName>MoreCSharp.Collections.Generic</AssemblyName>
+    <Rootnamespace>MoreCSharp.Collections.Generic</Rootnamespace>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <ApplicationIcon>./../images/logoIco.ico</ApplicationIcon>
     <Authors>Jonas Leijzen</Authors>
-    <RepositoryUrl>https://github.com/BluePumpKinZ/MoreCSharp/tree/master/MoreCSharp.System.Collections</RepositoryUrl>
+    <RepositoryUrl>https://github.com/BluePumpKinZ/MoreCSharp/tree/master/MoreCSharp.Collections.Generic</RepositoryUrl>
     <PackageLicenseExpression>AGPL-3.0-only</PackageLicenseExpression>
     <NeutralLanguage>en-US</NeutralLanguage>
     <PackageRequiredLicenseAcceptance>true</PackageRequiredLicenseAcceptance>

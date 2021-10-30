@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MoreCSharp.System {
+namespace MoreCSharp.Extensions.System {
 
 	public static class StringExtensions {
 

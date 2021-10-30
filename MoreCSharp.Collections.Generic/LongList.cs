@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace MoreCSharp.System.Collections.Generic {
+namespace MoreCSharp.Collections.Generic {
 	public class LongList<T> : ILongList<T> {
 
 		private const int BitsPerList = 30;
