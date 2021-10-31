@@ -36,7 +36,7 @@ do
 	fi
 	echo "    <TargetFramework>net5.0</TargetFramework>" >> $tmp
 	echo "    <AssemblyName>${namespace}</AssemblyName>" >> $tmp
-	echo "    <Rootnamespace>${namespace}</Rootnamespace>" >> $tmp
+	# echo "    <Rootnamespace>${namespace}</Rootnamespace>" >> $tmp
 	if [ $isTestProj -eq 1 ] ; then
 		echo "    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>" >> $tmp
 	else

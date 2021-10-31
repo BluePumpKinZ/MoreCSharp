@@ -4,7 +4,6 @@
     
     <TargetFramework>net5.0</TargetFramework>
     <AssemblyName>MoreCSharp.Threading</AssemblyName>
-    <Rootnamespace>MoreCSharp.Threading</Rootnamespace>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <ApplicationIcon>./../images/logoIco.ico</ApplicationIcon>
     <Authors>Jonas Leijzen</Authors>
