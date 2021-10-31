@@ -15,7 +15,7 @@
     <PackageRequiredLicenseAcceptance>true</PackageRequiredLicenseAcceptance>
     
   </PropertyGroup>
-  
+
   <ItemGroup>
     <ProjectReference Include="..\MoreCSharp.Collections.Generic\MoreCSharp.Collections.Generic.csproj" />
     <ProjectReference Include="..\MoreCSharp.Extensions.System\MoreCSharp.Extensions.System.csproj" />

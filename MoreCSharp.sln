@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MoreCSharp.Extensions.Syste
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MoreCSharp.Extensions.System.Collections.Generic", "MoreCSharp.Extensions.System.Collections.Generic\MoreCSharp.Extensions.System.Collections.Generic.csproj", "{46DA131C-140C-4DF1-9258-2A774B1CD385}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoreCSharp.Threading", "MoreCSharp.Threading\MoreCSharp.Threading.csproj", "{CD61FA4E-41FC-455C-96F7-AAB1AC4829D6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{46DA131C-140C-4DF1-9258-2A774B1CD385}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46DA131C-140C-4DF1-9258-2A774B1CD385}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46DA131C-140C-4DF1-9258-2A774B1CD385}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD61FA4E-41FC-455C-96F7-AAB1AC4829D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD61FA4E-41FC-455C-96F7-AAB1AC4829D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD61FA4E-41FC-455C-96F7-AAB1AC4829D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD61FA4E-41FC-455C-96F7-AAB1AC4829D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
