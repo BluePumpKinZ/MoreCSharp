@@ -11,14 +11,20 @@ namespace MoreCSharp.Extensions.System {
 			long minTicks = minDate.Ticks;
 			long maxTicks = maxDate.Ticks;
 
-			return new DateTime (random.Next (minTicks, maxTicks));
+			return new DateTime (random.NextLong (minTicks, maxTicks));
 		}
 
-		public static long Next (this Random random, long maxValue) {
-			return random.Next (0, maxValue);
+		public static long NextLong (this Random random) {
+			byte[] buffer = new byte[8];
+			random.NextBytes (buffer);
+			return BitConverter.ToInt64 (buffer, 0) & 0x7FFF_FFFF_FFFF_FFFF;
 		}
 
-		public static long Next (this Random random, long minValue, long maxValue) {
+		public static long NextLong (this Random random, long maxValue) {
+			return random.NextLong (0, maxValue);
+		}
+
+		public static long NextLong (this Random random, long minValue, long maxValue) {
 			if (maxValue < minValue)
 				throw new ArgumentException ("Minvalue must be lower or equal to maxvalue", $"{nameof(minValue)}, {nameof(maxValue)}");
 			byte[] buffer = new byte[8];
