@@ -11,6 +11,7 @@
     <PackageLicenseExpression>AGPL-3.0-only</PackageLicenseExpression>
     <NeutralLanguage>en-US</NeutralLanguage>
     <PackageRequiredLicenseAcceptance>true</PackageRequiredLicenseAcceptance>
+    <Version>1.1.0</Version>
     
   </PropertyGroup>
 
