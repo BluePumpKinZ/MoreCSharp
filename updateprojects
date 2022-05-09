@@ -2,6 +2,7 @@
 
 regextestproj="^.*.Tests.csproj"
 regexitemgroup="([\n\r\t ]*<ProjectReference Include=\".*\" \/>)"
+regexprojversion="<Version>[0-9\.a-z]+<\/Version>"
 
 tmp="/tmp/csproj"
 
@@ -19,6 +20,12 @@ do
 		itemgroup=$(echo -e "  <ItemGroup>\n${BASH_REMATCH[0]}\n  </ItemGroup>")
 	else
 		itemgroup=""
+	fi
+	
+	if [[ $file =~ $regexprojversion ]] ; then
+		projversion=$(echo -e "${BASH_REMATCH[0]}")
+	else
+		projversion=""
 	fi
 	
 	namespace=${csproj##*/}
@@ -48,6 +55,9 @@ do
 	echo "    <PackageLicenseExpression>AGPL-3.0-only</PackageLicenseExpression>" >> $tmp
 	echo "    <NeutralLanguage>en-US</NeutralLanguage>" >> $tmp
 	echo "    <PackageRequiredLicenseAcceptance>true</PackageRequiredLicenseAcceptance>" >> $tmp
+	if [ "${#projversion}" -ne 0 ] ; then
+		echo "    ${projversion}" >> $tmp
+	fi
 	echo "    " >> $tmp
 	echo "  </PropertyGroup>" >> $tmp
 	echo "" >> $tmp
